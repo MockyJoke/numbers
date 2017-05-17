@@ -1,0 +1,6 @@
+1.  I found it easier to work with numpy, as it works with array directly, which is easier to manipulate.
+    while codes written in pandas might be easier to read, as functions like np.reshape() might not reflect the semantic meaning of the operation (e.g. group data quarterly)
+2.  Using loop: 791 ms per loop
+    Using pandas buildin function: 30.7 ms per loop
+    Using loop requires to convert numpy/pandas data into python objects, which is allocated on the heap. As data are not stored continuously in heap.
+    Memory caching provides little to none benefit in this scenario. Thus there's a approximate 20x performance difference between the 2 approachs.
