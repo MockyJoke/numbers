@@ -1,0 +1,6 @@
+1.  
+The calculated values of the represents the [predicted rating] based of the date, as fit.slope & fit.intercept are 2 parameters "learned" from the existing dataset.
+The data['timestamp'] works like an array, behind the scene, panda apply the formula to element-wise to the array
+2. 
+The line is produced by linear regression using the given data.
+"created_at" and "timestamp" represents the same date-time, just with different representation, so the data point line up correctly.
