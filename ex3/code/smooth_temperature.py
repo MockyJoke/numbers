@@ -10,7 +10,7 @@ from statsmodels.nonparametric.smoothers_lowess import lowess
 from pykalman import KalmanFilter
 
 filename1 = sys.argv[1]
-filename1 = "sysinfo.csv"
+#filename1 = "sysinfo.csv"
 
 cpu_data = pd.read_table(filename1, sep=',', parse_dates=[2])
 
