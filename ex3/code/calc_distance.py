@@ -107,7 +107,7 @@ def main():
     print('Filtered distance: %0.2f' % (distance(smoothed_points),))
     output_gpx(smoothed_points, 'out.gpx')
 
-    smoothed_points
+    # smoothed_points
 if __name__ == '__main__':
     main()
 

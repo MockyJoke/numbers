@@ -1,0 +1,4 @@
+1. 
+I think i got a better result using LOESS. The result using LOESS appears to be smoother than the Kalman's. In some small part, Kalman's plot has some unrealistic steep oscillations.
+2. 
+If the data is collected from another independent sensor (not calculated from lat/lon data), we could use this data to create a estimated "next" cooridinate. Something like inertial location system in a commercial airplane.
