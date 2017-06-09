@@ -44,5 +44,5 @@ joined_df["rating"]=joined_df["rating"].round(2)
 joined_df.columns = ["title", "rating"]
 final_df = pd.merge(joined_df, df_movie_list, on=['title', 'title'])
 final_df.to_csv(filename3,index=False)
-final_df
+
 
