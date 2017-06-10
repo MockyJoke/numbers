@@ -1,0 +1,4 @@
+1. 
+Based on the plotted graph, I found no obvious relationship between daily temperatures and population density, at least not linearly. Thus it's hard to predict one from another.
+2. 
+Reading compressed data on the go (in-memory) could sometimes be more efficient than decompressing the whole gzip into hard drive. It's actually slower for computer to write/read a large amount of small json files on disk because the filesystem requires certain overhead for each file (metadata, ACLs, etc). Splitting the data into uncompressed json lead to problem where data could be fragmented on disk and when they are being read. Keeping the data compressed will benefit more in a caching point of view as data is stored in continuous memory space.
