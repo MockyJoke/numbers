@@ -1,0 +1,32 @@
+Summary: data-1.csv
+X, Mean: 8.717696, standard deviation: 12.094587, Min:-22.635878, Max:35.237055
+Y, Mean: 12.522874, standard deviation: 6.606681, Min:-2.565088, Max:27.384153
+Correlation coefficient: 0.950325695438
+As the correlation coeffcient is approximately equals to 1. I think x and y has linear relationship.
+
+
+Summary: data-2.csv
+X, Mean: -0.710787, standard deviation: 11.424031, Min:-33.271113, Max:27.647000
+Y, Mean: -0.748987, standard deviation: 6.226550, Min:-18.621804, Max:14.147315
+Correlation coefficient: 0.955153166575
+As the correlation coeffcient is approximately equals to 1. I think x and y has linear relationship.
+
+
+Summary: data-3.csv
+X, Mean: 0.968907, standard deviation: 2.231829, Min:-2.449064, Max:4.518885
+Y, Mean: 8.508535, standard deviation: 1.147384, Min:6.641734, Max:10.551871
+Correlation coefficient: 0.981937264676
+As the correlation coeffcient is approximately equals to 1. I think x and y has linear relationship.
+
+
+Summary: data-4.csv
+X, Mean: 49.905086, standard deviation: 28.387554, Min:0.000000, Max:87.376700
+Y, Mean: 18.553837, standard deviation: 16.475638, Min:0.000000, Max:44.565040
+Correlation coefficient: -0.0811930673549
+As the correlation coeffcient is approximately equals to 0. I think there's no obvious relationship between x and y.
+
+Summary: data-5.csv
+X, Mean: 49.909994, standard deviation: 28.378981, Min:4.337892, Max:91.052863
+Y, Mean: 18.555525, standard deviation: 16.470559, Min:0.055498, Max:49.934197
+Correlation coefficient: -0.0882359898306
+As the correlation coeffcient is approximately equals to 0. I think there's no obvious relationship between x and y.
