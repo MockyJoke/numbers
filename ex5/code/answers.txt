@@ -1,3 +1,10 @@
 1.
 We got the best answer when using np.sqrt to perfrom the transformation.
 2.
+Since the null hypothesis for this T-test is: "The distribution of comments for weekends and weekdays have the same mean." Rejecting the hypothesis means we can prove they have different mean, but we could not tell which one have greater mean.
+Thus, for the original data, if we could reject the null hypothesis, it means: "The mean for the number of twitter comments for weekdays are different than that for weekdays"
+For transformed data, since sqrt is a continous monotonic function, it does not change the nature of the data, we could draw a similiar conclusion "The mean for the (SQUARED) number of twitter comments for weekdays are different than (SQUARED) number for weekdays"
+3.
+I think Fix 2(using Central Limit Theorem) will answer the question better. Even it have aggregated the data into weeks, but it can still reflect the nature of the problem "Do people tent to comment more on weekends or weekends"?
+4.
+By looking at the data, I think number of comments on the weekdays have greater mean.
