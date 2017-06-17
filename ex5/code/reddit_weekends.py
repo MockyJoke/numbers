@@ -1,26 +1,18 @@
 
 # coding: utf-8
 
-# In[1]:
 
 import sys
 import pandas as pd
 import numpy as np
 import difflib
 import gzip
-# import matplotlib.pyplot as plt
 from scipy import stats 
 
-# filename1 = sys.argv[1]
 
-#filename1 = "reddit-counts.json.gz"
-
-
-# In[16]:
 
 def filter_data(df):
-# data_file = gzip.open(filename1, 'rt', encoding='utf-8')
-# data = pd.read_json(data_file, lines=True)
+
     data=df.copy()
     data['year']=data.apply(lambda x: x['date'].year,axis = 1)
     data['iso_year']=data.apply(lambda x: x['date'].isocalendar()[0],axis = 1)
@@ -31,36 +23,11 @@ def filter_data(df):
     return data
 
 
-# In[3]:
-
-# weekends = data[data["isWeekend"]==True]
-# weekdays = data[data["isWeekend"]==False]
-
-
-# <h2>Normality and Equal variance Test</h2>
-
-# In[4]:
-
-# print(stats.normaltest(weekends["comment_count"]).pvalue)
-# print(stats.normaltest(weekdays["comment_count"]).pvalue)
-# print(stats.levene(weekdays["comment_count"],weekends["comment_count"]).pvalue)
-
-
-# In[5]:
-
 def fix_1(func):
     print(func)
     print(stats.normaltest(func(weekends["comment_count"])).pvalue)
     print(stats.normaltest(func(weekdays["comment_count"])).pvalue)
     print(stats.levene(func(weekdays["comment_count"]),func(weekends["comment_count"])).pvalue)
-# fix_1(np.log)
-# fix_1(np.log)
-# not working for exp
-# fix_1(np.exp)
-# fix_1(np.sqrt)
-# fix_1(lambda x:x*x)
-
-
 
 
 def main():
