@@ -10,7 +10,6 @@ import difflib
 import gzip
 from scipy import stats
 from statsmodels.stats import multicomp
-import matplotlib.pyplot as plt
 
 
 # In[173]:
@@ -36,8 +35,6 @@ print("""From the scipy ANOVA website https://docs.scipy.org/doc/scipy-0.14.0/re
 print("""It hints that we could use Kruskal-Wallis H-test (which does not require data in normal distribution). Let's try it !""")
 print("")
 
-# posthoc.plot_simultaneous()
-# plt.show()
 
 
 # In[176]:
