@@ -1,0 +1,37 @@
+1. 
+I don't think we are hacking the p-values, since the data comes with natural user usage (if the prof did not fake the data), we are calculating the p-values directly based on the search_count.
+2.
+We need to perform (7 choose 2) = 21 T-Tests. The probability of having them all right is (1-0.05)^21 which is approximetly 0.34.
+3.
+Based on the result of my run, 
+
+ Multiple Comparison of Means - Tukey HSD,FWER=0.05     
+=============================================================
+    group1         group2     meandiff  lower   upper  reject
+-------------------------------------------------------------
+    merge1     partition_sort -0.0838  -0.0891 -0.0785  True 
+    merge1          qs1       -0.1164  -0.1217 -0.1111  True 
+    merge1          qs2       -0.0351  -0.0404 -0.0298  True 
+    merge1          qs3       -0.0385  -0.0438 -0.0332  True 
+    merge1          qs4       -0.0526  -0.0579 -0.0473  True 
+    merge1          qs5       -0.0479  -0.0532 -0.0426  True 
+partition_sort      qs1       -0.0326  -0.0379 -0.0273  True 
+partition_sort      qs2        0.0487   0.0434  0.054   True 
+partition_sort      qs3        0.0453    0.04   0.0506  True 
+partition_sort      qs4        0.0312   0.0259  0.0365  True 
+partition_sort      qs5        0.0359   0.0306  0.0412  True 
+     qs1            qs2        0.0813   0.076   0.0866  True 
+     qs1            qs3        0.0779   0.0726  0.0832  True 
+     qs1            qs4        0.0638   0.0585  0.0691  True 
+     qs1            qs5        0.0685   0.0632  0.0738  True 
+     qs2            qs3       -0.0033  -0.0086  0.002  False 
+     qs2            qs4       -0.0175  -0.0228 -0.0122  True 
+     qs2            qs5       -0.0128  -0.0181 -0.0075  True 
+     qs3            qs4       -0.0142  -0.0195 -0.0089  True 
+     qs3            qs5       -0.0095  -0.0148 -0.0042  True 
+     qs4            qs5        0.0047  -0.0006   0.01  False 
+
+
+this is the order, ranked from fastest to slowest.
+qs1 , partition_sort, (qs4 or qs5, falling to reject null hypothesis), (qs3 or qs2, falling to reject null hypothesis), merge_sort.
+
