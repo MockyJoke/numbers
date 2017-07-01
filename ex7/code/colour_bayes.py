@@ -105,7 +105,9 @@ def main():
     Y_predicted_lab = model_lab.predict(X_test)
     print(accuracy_score(Y_test, Y_predicted_lab))
     
-    
+
+
+    plot_predictions(model_rgb)
     plt.savefig('predictions_rgb.png')
     plot_predictions(model_lab)
     plt.savefig('predictions_lab.png')
