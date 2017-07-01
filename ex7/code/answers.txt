@@ -1,0 +1,7 @@
+1.
+Beside some outlier on the negative x part of the graph, I think the graph looks normal to me (a bit skewed to the right).
+Looking at the almost bell-shaped histogram, the mean is approximately in the rage betweet 0 to 1, which is a positive mean.
+Meaning that actual rating are on average higher than the predicted rating, given that the fit-model has a positive slope, 
+it shows that the ratings are increasing.
+2.
+Yes, I think the new “better” prediction is helping Kalman filter to do a better job.

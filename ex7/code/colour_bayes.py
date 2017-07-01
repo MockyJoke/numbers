@@ -21,8 +21,8 @@ from sklearn import preprocessing
 def my_rgb2lab(colors): 
     old_shape = colors.shape
     reshaped = colors.reshape(old_shape[0],1,old_shape[1])
-    lab = color.rgb2lab(reshaped)
-    return lab.reshape(old_shape)
+    colors_lab = color.rgb2lab(reshaped)
+    return colors_lab.reshape(old_shape)
 
 
 # In[6]:
