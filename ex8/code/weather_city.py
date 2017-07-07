@@ -30,6 +30,8 @@ def main():
 
     training_columns = data.columns.tolist()
     training_columns.remove("city")
+    training_columns.remove("year")
+    
     training_columns
     X_train,X_test,y_train,y_test = model_selection.train_test_split(data[training_columns].values,data["city"].values)
 
