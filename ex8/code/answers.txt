@@ -1,0 +1,6 @@
+1.
+The k-nn model gives the best result in the color labeling task.
+It because the nature of how k-nn works: by looking at labels of the k nearest points of the new sampling point, which is very close to how human labeling a color when seeing a color sepcturm (close color tended to have the same color label). While other method does not work in this way. Using SVM for this problem might be a bit overkill since SVM is good for handing more complex problem, I guess SVM might perform better if we can tweak the parameter further.
+2.
+I think most of the time the model is making reasonable mistakes, as the (wrongly) predicted city is somewhat close to the truth city. There are cases when the predicted city is far from the truth, but they still have similiar temperatures.
+I think additional useful features might be wind speed/direction, or sun rise/set time.
