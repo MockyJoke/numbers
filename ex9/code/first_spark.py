@@ -22,11 +22,12 @@ def main():
     # Read the data from the JSON files
     xyz = spark.read.json(in_directory, schema=schema)
     #xyz.show(); return
-
+    
     # Create a DF with what we need: x, (soon y,) and id%10 which we'll aggregate by.
     with_bins = xyz.select(
         xyz['x'],
         # TODO: also the y values
+        xyz['y'],
         (xyz['id'] % 10).alias('bin'),
     )
     #with_bins.show(); return
@@ -36,8 +37,8 @@ def main():
     groups = grouped.agg(
         functions.sum(with_bins['x']),
         # TODO: output the average y value. Hint: avg
+        functions.avg(xyz['y']),
         functions.count('*'))
-
     # We know groups has <=10 rows, so it can safely be moved into two partitions.
     groups = groups.sort(groups['bin']).coalesce(2)
     groups.write.csv(out_directory, compression=None, mode='overwrite')
