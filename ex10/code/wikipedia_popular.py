@@ -72,7 +72,7 @@ def main():
     result = result.select(pagecounts["time"],"title","visit_count").sort("time")
     # result.explain()
 
-    # We know groups has <=100 rows, since the data is grouped by time combincations, so it can safely be moved into 1 partition.
+    # We know groups has <=1000 rows, since the data is grouped by time combinations, so it can safely be moved into 1 partition.
     result.coalesce(1).write.csv(out_directory, mode='overwrite')
 
 
