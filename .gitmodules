@@ -1,0 +1,4 @@
+[submodule "ml-weather"]
+	path = ml-weather
+	url = https://github.com/onethirdzero/ml-weather.git
+	branch = master
