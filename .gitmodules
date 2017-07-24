@@ -1,0 +1,3 @@
+[submodule "ml-weather"]
+	path = include/
+	url = https://github.com/onethirdzero/ml-weather.git
