@@ -1,0 +1,9 @@
+1.
+(1, reddit-0) 26.507s
+(2, reddit-2, no-schema) 42.498s
+(3, reddit-2, with-schema/no-cache) 38.505s
+(4, reddit-2, with-schema/with-cache) 34.162s
+
+2. Based on the result, I think most of the time is spent on reading/outputing the files instead of doing the actual calculation.
+
+3.The best location to cache is after the spark has loaded all csv. (Before performing any groupby operations)
