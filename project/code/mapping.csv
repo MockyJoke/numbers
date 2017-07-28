@@ -1,0 +1,32 @@
+Original,Mapped
+Mainly Clear,Clear
+Mostly Cloudy,Cloudy
+Cloudy,Cloudy
+Rain Showers,"Rain,Cloudy"
+Moderate Rain Showers,"Rain,Cloudy"
+Clear,Clear
+Rain,"Rain,Cloudy"
+"Rain,Fog","Rain,Cloudy,Fog"
+Drizzle,"Rain,Cloudy"
+"Rain Showers,Fog","Rain,Cloudy,Fog"
+Thunderstorms,"Rain,Cloudy"
+Fog,Fog
+"Drizzle,Fog","Rain,Cloudy,Fog"
+"Moderate Rain Showers,Fog","Rain,Cloudy,Fog"
+"Rain,Drizzle","Rain,Cloudy"
+Moderate Rain,"Rain,Cloudy"
+"Moderate Rain,Drizzle","Rain,Cloudy"
+Heavy Rain,"Rain,Cloudy"
+"Moderate Rain,Fog","Rain,Cloudy,Fog"
+"Rain,Drizzle,Fog","Rain,Cloudy,Fog"
+"Heavy Rain,Fog","Rain,Cloudy,Fog"
+Snow Showers,"Rain,Cloudy,Snow"
+Snow,"Snow,Cloudy"
+"Snow,Fog","Snow,Cloudy,Fog"
+"Rain,Snow","Rain,Cloudy,Snow"
+Freezing Fog,Fog
+"Rain,Snow,Fog","Rain,Cloudy,Snow,Fog"
+Moderate Snow,"Snow,Cloudy"
+"Rain Showers,Snow Showers,Fog","Rain,Cloudy,Snow,Fog"
+"Rain Showers,Snow Pellets","Rain,Cloudy,Snow"
+"Rain Showers,Snow Showers","Rain,Cloudy,Snow"
