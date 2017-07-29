@@ -1,1 +1,8 @@
-no-broadcast 50.546s
+1.
+I cached the dataframe right after the json data files are read(before first join), since the comments dataframe are used multiple times later.
+I also cached the dataframe where it stores the newly calculated rel_score.
+If no cached used, especially the first dataframe, the json files will need to be read more than one times since the data will be disposed in the middle of the calculation. 
+2.
+broadcast 0m39.123s
+no-broadcast 0m39.123s
+Broadcasting small dataframe seems before joining seems improved the performance a lot.
